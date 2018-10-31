@@ -4,7 +4,7 @@
 Summary:	Perl implementation of the Soundex algorithm
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/release/Text-Soundex
