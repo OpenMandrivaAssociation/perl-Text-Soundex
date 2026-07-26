@@ -1,14 +1,12 @@
 %define modname Text-Soundex
-%define modver	3.05
-
 Summary:	Perl implementation of the Soundex algorithm
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	3.05
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/release/Text-Soundex
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Text-Soundex-%{modver}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Text-Soundex-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::Command::MM)
 BuildRequires:	perl(Test::Harness)
@@ -18,7 +16,7 @@ BuildRequires:	make
 A perl implementation of the soundex algorithm.
 
 %prep
-%autosetup -p1 -n %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
